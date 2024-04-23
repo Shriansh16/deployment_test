@@ -2,7 +2,7 @@ from flask import Flask,request,render_template,jsonify
 import os
 import sys
 from src.pipelines.prediction_pipeline import Predict_Pipeline,CustomData
-
+#593295547850.dkr.ecr.ap-south-1.amazonaws.com/test24
 
 application=Flask(__name__)
 
@@ -43,4 +43,4 @@ def predict_datapoint():
     
 
 if __name__=="__main__":
-    app.run(host='0.0.0.0',debug=True)
+    app.run(host='0.0.0.0', port=8080) #for AWS
