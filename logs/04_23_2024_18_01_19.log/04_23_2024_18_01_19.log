@@ -1,0 +1,14 @@
+[ 2024-04-23 18:01:22,818 ] 22 root - INFO - dataset is successfully taken
+[ 2024-04-23 18:01:22,827 ] 24 root - INFO - train test split is completed
+[ 2024-04-23 18:01:22,827 ] 25 root - INFO - saving dataset
+[ 2024-04-23 18:01:22,881 ] 32 root - INFO - dataset successfully saved
+[ 2024-04-23 18:01:22,940 ] 27 root - INFO - preprocessing of categorical data and numerical data is done
+[ 2024-04-23 18:01:22,947 ] 41 root - INFO - TRANSFORMATION STARTED
+[ 2024-04-23 18:01:23,001 ] 44 root - INFO - TRANSFORAMTION DONE
+[ 2024-04-23 18:01:23,001 ] 45 root - INFO - (1041,)
+[ 2024-04-23 18:01:23,002 ] 46 root - INFO - (1041, 43)
+[ 2024-04-23 18:01:23,004 ] 50 root - INFO - 1
+[ 2024-04-23 18:01:23,013 ] 26 root - INFO - initiating training
+[ 2024-04-23 18:01:23,015 ] 31 root - INFO - TRAINING STARTED
+[ 2024-04-23 18:01:23,015 ] 32 root - INFO - MODEL REPORT : 
+[ 2024-04-23 18:01:26,141 ] 34 root - INFO - {'LinearRegressor ': 0.7523422413510379, 'RandomForestRegressor ': 0.8229263149326516, 'AdaBoostRegressor ': 0.5934155338881489, 'GradientBoostingRegressor ': 0.8215964948565337, 'DecisionTreeRegressor ': 0.8076626859258293, 'KneighborsRegressor ': 0.7339611789732545}

@@ -1,0 +1,182 @@
+<html>
+<head>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  form {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+    padding: 15px; /* Adjust padding */
+    width: 300px; /* Adjust width */
+  }
+
+  .form-group {
+    margin-bottom: 15px; /* Adjust margin */
+  }
+
+  label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 3px; /* Adjust margin */
+    color: #333;
+    font-size: 12px; /* Adjust font size */
+  }
+
+  input[type="text"], select {
+    width: 100%;
+    padding: 8px; /* Adjust padding */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 12px; /* Adjust font size */
+  }
+
+  select {
+    cursor: pointer;
+  }
+
+  input[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 15px; /* Adjust padding */
+    font-size: 14px; /* Adjust font size */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  input[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+
+  hr {
+    margin: 15px 0; /* Adjust margin */
+    border: 0;
+    border-top: 1px solid #ccc;
+  }
+
+  #final-result {
+    font-size: 14px; /* Adjust font size */
+    margin-top: 15px; /* Adjust margin */
+    color: #007bff;
+  }
+</style>
+</head>
+<body>
+<form action="{{url_for('predict_datapoint')}}" method="POST">
+    
+    
+            
+  
+    <div class="form-group">
+      <label for="Company">Company:</label>
+      <select id="Company" name="Company">
+        <option value="Dell">Dell</option>
+        <option value="MSI">MSI</option>
+        <option value="Asus">Asus</option>
+        <option value="HP">HP</option>
+        <option value="Razer">Razer</option>
+        <option value="Lenovo">Lenovo</option>
+        <option value="Xiaomi">Xiaomi</option>
+        <option value="Toshiba">Toshiba</option>
+        <option value="Microsoft">Microsoft</option>
+        <option value="Acer">Acer</option>
+        <option value="Mediacom">Mediacom</option>
+        <option value="Apple">Apple</option>
+        <option value="Samsung">Samsung</option>
+        <option value="Fujitsu">Fujitsu</option>
+        <option value="Huawei">Huawei</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="TypeName">TypeName:</label>
+      <select id="TypeName" name="TypeName">
+        <option value="Notebook">Notebook</option>
+        <option value="Gaming">Gaming</option>
+        <option value="2 in 1 Convertible">2 in 1 Convertible</option>
+        <option value="Ultrabook">Ultrabook</option>
+        <option value="Workstation">Workstation</option>
+        <option value="Netbook">Netbook</option>
+      </select>
+    </div>
+    <div class="form-group">
+        <label for="Ram">Ram:</label>
+        <input type="text" id="Ram" name="Ram" placeholder="Enter Ram (int)">
+    </div>  
+    <div class="form-group">
+        <label for="Weight">Weight:</label>
+        <input type="text" id="Weight" name="Weight" placeholder="Enter Weight (float)">
+    </div> 
+    <div class="form-group">
+        <label for="Touchscreen">Touchscreen:</label>
+        <select id="text" name="Touchscreen">
+          <option value="1">YES</option>
+          <option value="0">NO</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="IPS">IPS:</label>
+        <select id="text" name="IPS">
+          <option value="1">YES</option>
+          <option value="0">NO</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="ppi">ppi:</label>
+        <input type="text" id="ppi" name="ppi" placeholder="Enter Pixels Per Inch (float)">
+    </div> 
+    <div class="form-group">
+        <label for="CPU_BRAND">CPU_BRAND:</label>
+        <select id="CPU_BRAND" name="CPU_BRAND">
+          <option value="Intel Core i5">Intel Core i5</option>
+          <option value="Intel Core i7">Intel Core i7</option>
+          <option value="Intel Core i3">Intel Core i3</option>
+          <option value="AMD Processor">AMD Processor</option>
+          <option value="Other Intel Processor">Other Intel Processor</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="HDD">HDD:</label>
+        <input type="text" id="HDD" name="HDD" placeholder="Enter HDD (int)">
+    </div> 
+    <div class="form-group">
+        <label for="SSD">SSD:</label>
+        <input type="text" id="SSD" name="SSD" placeholder="Enter SSD (int)">
+    </div>
+    <div class="form-group">
+        <label for="GPU_BRAND">GPU_BRAND:</label>
+        <select id="GPU_BRAND" name="GPU_BRAND">
+          <option value="AMD">AMD</option>
+          <option value="Nvidia">Nvidia</option>
+          <option value="Intel">Intel</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="OS">OS:</label>
+        <select id="OS" name="OS">
+          <option value="Windows">Windows</option>
+          <option value="Other">Other</option>
+          <option value="Mac">Mac</option>
+        </select>
+    </div>
+    
+
+    <div style="clear:both;"></div>
+    <input type="submit" value="Submit">
+</form>
+
+<div id="final-result">
+    {{final_result}}
+</div>
+</body>
+</html>

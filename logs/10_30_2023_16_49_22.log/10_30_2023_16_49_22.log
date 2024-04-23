@@ -1,0 +1,10 @@
+[ 2023-10-30 16:49:26,948 ] 22 root - INFO - dataset is successfully taken
+[ 2023-10-30 16:49:26,964 ] 24 root - INFO - train test split is completed
+[ 2023-10-30 16:49:26,964 ] 25 root - INFO - saving dataset
+[ 2023-10-30 16:49:27,026 ] 29 root - INFO - dataset successfully saved
+[ 2023-10-30 16:49:27,089 ] 26 root - INFO - preprocessing of categorical data and numerical data is done
+[ 2023-10-30 16:49:27,104 ] 40 root - INFO - TRANSFORMATION STARTED
+[ 2023-10-30 16:49:27,135 ] 43 root - INFO - TRANSFORAMTION DONE
+[ 2023-10-30 16:49:27,135 ] 44 root - INFO - (1041,)
+[ 2023-10-30 16:49:27,135 ] 45 root - INFO - (1041, 43)
+[ 2023-10-30 16:49:27,135 ] 52 root - INFO - ERROR OCCURED DURING INITIATION OF DATA TRANSFORAMTION
